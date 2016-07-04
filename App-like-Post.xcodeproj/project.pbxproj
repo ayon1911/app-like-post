@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B629B13F1D2810E700B154CA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629B13E1D2810E700B154CA /* Post.swift */; settings = {ASSET_TAGS = (); }; };
+		B629B1431D281B3200B154CA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629B1421D281B3200B154CA /* PostCell.swift */; settings = {ASSET_TAGS = (); }; };
+		B629B1461D28740900B154CA /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629B1451D28740900B154CA /* AddPostVC.swift */; settings = {ASSET_TAGS = (); }; };
+		B629B1491D287EE700B154CA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629B1481D287EE700B154CA /* DataService.swift */; settings = {ASSET_TAGS = (); }; };
 		B64E6C531D2304D300F48459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E6C521D2304D300F48459 /* AppDelegate.swift */; };
 		B64E6C551D2304D300F48459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E6C541D2304D300F48459 /* ViewController.swift */; };
 		B64E6C581D2304D300F48459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64E6C561D2304D300F48459 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B629B13E1D2810E700B154CA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B629B1421D281B3200B154CA /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		B629B1451D28740900B154CA /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		B629B1481D287EE700B154CA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		B64E6C4F1D2304D300F48459 /* App-like-Post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-like-Post.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64E6C521D2304D300F48459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B64E6C541D2304D300F48459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B629B13D1D2810CE00B154CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B629B13E1D2810E700B154CA /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B629B1401D281AFE00B154CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B64E6C561D2304D300F48459 /* Main.storyboard */,
+				B64E6C5B1D2304D300F48459 /* LaunchScreen.storyboard */,
+				B629B1421D281B3200B154CA /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B629B1441D2873D200B154CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B64E6C541D2304D300F48459 /* ViewController.swift */,
+				B629B1451D28740900B154CA /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B629B1471D287ED400B154CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B629B1481D287EE700B154CA /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		B64E6C461D2304D300F48459 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +97,12 @@
 		B64E6C511D2304D300F48459 /* App-like-Post */ = {
 			isa = PBXGroup;
 			children = (
+				B629B1471D287ED400B154CA /* Services */,
+				B629B13D1D2810CE00B154CA /* Model */,
+				B629B1401D281AFE00B154CA /* View */,
+				B629B1441D2873D200B154CA /* Controller */,
 				B64E6C521D2304D300F48459 /* AppDelegate.swift */,
-				B64E6C541D2304D300F48459 /* ViewController.swift */,
-				B64E6C561D2304D300F48459 /* Main.storyboard */,
 				B64E6C591D2304D300F48459 /* Assets.xcassets */,
-				B64E6C5B1D2304D300F48459 /* LaunchScreen.storyboard */,
 				B64E6C5E1D2304D300F48459 /* Info.plist */,
 			);
 			path = "App-like-Post";
@@ -134,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B629B13F1D2810E700B154CA /* Post.swift in Sources */,
 				B64E6C551D2304D300F48459 /* ViewController.swift in Sources */,
+				B629B1461D28740900B154CA /* AddPostVC.swift in Sources */,
+				B629B1491D287EE700B154CA /* DataService.swift in Sources */,
 				B64E6C531D2304D300F48459 /* AppDelegate.swift in Sources */,
+				B629B1431D281B3200B154CA /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +331,7 @@
 				B64E6C631D2304D300F48459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
